@@ -18,6 +18,16 @@ window.onload = function(){
 
         square.classList.add('square');
 
+        // Add hover effect
+        square.addEventListener('mouseover', () => {
+            square.classList.add('hover');
+        });
+
+        //Remove hover effect
+        square.addEventListener('mouseout', () => {
+            square.classList.remove('hover');
+        });
+
         //add eventListener to each Square so they change when clicked.
         square.addEventListener('click', () =>{
 
